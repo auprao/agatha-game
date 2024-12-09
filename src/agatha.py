@@ -359,7 +359,7 @@ def encounter(chars, enemies) :
                     both.remove(both[j])
                     j -= 1   
 
-        if len(chars) > 0 :
+        if len(chars) == 0 :
             print("You lost.")
 
     print("You won!")
