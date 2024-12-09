@@ -43,7 +43,7 @@ def print_tablet(tablet) :
                 case "star" :
                     print(" ☆", end = " ")
                 case "tide" :
-                    print(" ࿐", end = " ")
+                    print(" 〜", end = " ")
                 case "cycle" :
                     print(" ○", end = " ")
                 case "moon" :
@@ -63,7 +63,7 @@ def read_cost(cost):
                 case "s" :
                     symbols += "☆ "
                 case "t" :
-                    symbols += "࿐ "
+                    symbols += "〜 "
                 case "c" :
                     symbols += "○ "
                 case "m" :
