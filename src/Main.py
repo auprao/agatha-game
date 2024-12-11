@@ -6,7 +6,7 @@ from Encounter import *
 from Characters import *
 
 def main() : 
-    
+
     create_agatha()
     create_sak_pixan()
     create_you()
@@ -16,14 +16,11 @@ def main() :
     print("First Encounter!")
     encounter(characters, e1_enemies)
 
-# finish reading move
-# add the cover up stones n name them
+# add the cover up stones n name them ("stone" ?)
 # agatha, unable
 # error handle selecting target
-# todo: make wait move a rotate (0 times) to not ask for target
 # write execute_move in Move
-# move character to Character.py (global difficulties)
-# is it ok to import * ? should it import only the necessary specific code?
+# write read_moveset in Character
 
 if __name__ == "__main__":
     main()

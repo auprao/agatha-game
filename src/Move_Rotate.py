@@ -21,7 +21,7 @@ class MoveExt :
         self.cost = cost
 
 class Rotate :
-    def __init__(self, name, times, team_targets, cost, move) :
+    def __init__(self, name, times, team_targets, cost, move=None) :
         self.name = name
         self.times = times
         self.team_targets = team_targets
@@ -31,3 +31,4 @@ class Rotate :
 def execute_move(user, move, chars):
     target = move[1]
     move = move[0]
+    # to be written!

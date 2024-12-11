@@ -13,8 +13,8 @@ class Character :
         self.tablet = tablet
         self.moveset = moveset
         self.resources = ""
-        moveset.append(Move("Wait", 0, 0, ""))
-        moveset.append(Rotate("Rotate", 1, 1, "c", None))
+        moveset.append(Rotate("Wait", 0, 0, "")) # should team_targets (third parameter) be 0 or 1? depends on implementation
+        moveset.append(Rotate("Rotate", 1, 1, "c"))
         characters.append(self)
 
     def choose_move(self, resources, enemies) :
