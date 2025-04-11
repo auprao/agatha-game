@@ -1,5 +1,3 @@
-from Tablet_Cost_Resources import *
-from Move_Rotate import *
 from Character import *
 
 def encounter(chars, enemies) :

@@ -1,9 +1,6 @@
-from Tablet_Cost_Resources import *
-from Enemy import *
-from Enemies import *
-from Move_Rotate import *
 from Encounter import *
-from Characters import *
+from Characterbook import *
+from Enemybook import *
 
 def main() : 
 
@@ -21,6 +18,8 @@ def main() :
 # error handle selecting target
 # write execute_move in Move
 # write read_moveset in Character
+# emotion level
+# make every Move into MoveExt, have actual MoveExt that works with turn count, hp, all char traits
 
 if __name__ == "__main__":
     main()
