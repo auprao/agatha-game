@@ -20,6 +20,7 @@ def main() :
 # write read_moveset in Character
 # emotion level
 # make every Move into MoveExt, have actual MoveExt that works with turn count, hp, all char traits
+# apply status effects
 
 if __name__ == "__main__":
     main()
