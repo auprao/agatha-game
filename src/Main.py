@@ -16,10 +16,10 @@ def main() :
 # add the cover up stones n name them ("stone" ?)
 # error handle selecting target
 # write execute_move in Move
-# write read_moveset in Character
+# write read_move in Character (and read a move inside of a Rotate)
 # emotion level
-# make every Move into MoveExt, have actual MoveExt that works with turn count, hp, all char traits
 # apply status effects
+# slash-pierce spectrum
 
 if __name__ == "__main__":
     main()
