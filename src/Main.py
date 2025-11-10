@@ -10,11 +10,10 @@ def main() :
 
     e1_enemies = [WindSpirit(), WindSpirit(), WindSpirit()]
 
-    print("First Encounter!")
+    print("\nFirst Encounter!")
     encounter(characters, e1_enemies)
 
 # add the cover up stones n name them ("stone" ?)
-# agatha, unable
 # error handle selecting target
 # write execute_move in Move
 # write read_moveset in Character

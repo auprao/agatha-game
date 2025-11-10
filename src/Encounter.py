@@ -12,11 +12,11 @@ def encounter(chars, enemies) :
         both = sort_by_speed(both)
         for i in range(len(both)) :
             if both[i] in chars :
-                print(f"{both[i].name}'s tablet:")
+                print(f"\n{both[i].name}'s tablet:")
                 print_tablet(both[i].tablet)
 
                 both[i].resources = both[i].resources + get_resources(both[i].tablet)
-                print(f"{both[i].name}'s resources: {read_cost(both[i].resources)}")
+                print(f"\n{both[i].name}'s resources: {read_cost(both[i].resources)}\n")
 
                 move = both[i].choose_move(both[i].resources, enemies)
                 # both[i].resources = delete_cost(move[0].cost, both[i].resources) 

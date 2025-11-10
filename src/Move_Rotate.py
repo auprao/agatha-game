@@ -1,10 +1,10 @@
 class Move :
-    def __init__(self, name, dmg, heal, cost, directed=True, enemy_targets=1, team_targets=1) :
+    def __init__(self, name, dmg, selfdmg, cost, directed=True, enemy_targets=1, team_targets=1) :
         self.name = name
         self.directed = True
         self.dmg = dmg
         self.enemy_targets = 1
-        self.selfdmg = heal
+        self.selfdmg = selfdmg
         self.team_targets = 1
         self.cost = cost
         self.directed = directed

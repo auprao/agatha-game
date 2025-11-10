@@ -13,16 +13,16 @@ class Character :
         self.tablet = tablet
         self.moveset = moveset
         self.resources = ""
-        moveset.append(Rotate("Wait", 0, 0, "")) # should team_targets (third parameter) be 0 or 1? depends on implementation
+        moveset.append(Rotate("Wait", 0, 0, "")) 
         moveset.append(Rotate("Rotate", 1, 1, "c"))
         characters.append(self)
 
     def choose_move(self, resources, enemies) :
 
         #present moves
-        print(f"{self.name}'s moveset:")
+        print(f"\n{self.name}'s moveset:")
         for i in range(len(self.moveset)) :
-            print(f"Move {i + 1}: {self.read_moveset(i)}")
+            print(f"Move {i + 1}: {self.read_move(i)}")
 
         full_target = None
         chosen = False
@@ -56,16 +56,18 @@ class Character :
 
         return self.moveset[0], full_target
 
-    def read_moveset(self, i) :
+    def read_move(self, i) :
         current = self.moveset[i]
         readable = f'"{current.name}", '
-        if isinstance(current, Move) or isinstance(current, MoveExt) :
-            readable += f"{current. dmg} DMG, {current.heal} healing"
+        if isinstance(current, Move)  :
+            readable += f"{current. dmg} DMG"
+            if current.selfdmg < 0 :
+                readable += f", {-current.selfdmg} healing"
+            elif current.selfdmg < 0 :
+                readable += f", {current.selfdmg} self-damage"
 
-            if isinstance(current, MoveExt) :
-                pass
-            else :
-                pass
+            # should have extra readables
+
         else:
             readable += f'{current.times} times'
 
